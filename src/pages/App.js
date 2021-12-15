@@ -6,6 +6,7 @@ import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
+import alisThings from './aliThings/aliThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -129,6 +130,47 @@ const App = () => {
     },
   ])
 
+  const [aliThings, setAliThings] = useState([
+    {
+      name: 'not banana',
+      image:
+        'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+      attributes: [
+        'potassium-rich',
+        'yellow when good',
+        'not a taco',
+        'ring ring ring ring ring ring ring',
+      ],
+    },
+    {
+      name: 'not turkey',
+      image:
+        'https://images.unsplash.com/photo-1560011961-4ab41261de01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+      attributes: [
+        'such gobbles',
+        'good when stuffed',
+        'not a taco',
+        'why gravy exists',
+      ],
+    },
+    {
+      name: 'taco',
+      image:
+        'https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
+      attributes: [
+        'yummy in my tummy',
+        'salsas may vary',
+        'definitely a taco',
+        'very edible',
+      ],
+    },
+    {
+      name: 'linux',
+      image: 'https://i.imgur.com/3BmfSOA.png',
+      attributes: ['not a taco', 'not Windows', 'not macOS', 'Penguins?'],
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -148,6 +190,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/ali-things"
+        element={<SillyThings things={alisThings} />}
       />
     </Routes>
   )
