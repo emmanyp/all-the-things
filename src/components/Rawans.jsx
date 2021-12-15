@@ -1,1 +1,0 @@
-export const Rawans = ['this','is','rawans','component']

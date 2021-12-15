@@ -2,7 +2,7 @@ import ThingCard from '../../components/ThingCard/ThingCard'
 
 import { Link } from 'react-router-dom'
 
-const alisThings = (props) => {
+const AliThings = (props) => {
   return (
     <>
       <h1>Shahzad's Things</h1>
@@ -15,4 +15,4 @@ const alisThings = (props) => {
   )
 }
  
-export default alisThings
+export default AliThings

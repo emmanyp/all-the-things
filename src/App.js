@@ -6,7 +6,7 @@ import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
-import alisThings from './aliThings/aliThings'
+import AliThings from './pages/AliThings/AliThings'
 
 const App = () => {
   const [shahzadsThings, setShazadsThings] = useState([
@@ -193,7 +193,7 @@ const App = () => {
       />
       <Route
         path="/ali-things"
-        element={<alisThings things={alisThings} />}
+        element={<AliThings things={aliThings} />}
       />
     </Routes>
   )
