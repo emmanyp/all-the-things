@@ -193,7 +193,7 @@ const App = () => {
       />
       <Route
         path="/ali-things"
-        element={<SillyThings things={alisThings} />}
+        element={<alisThings things={alisThings} />}
       />
     </Routes>
   )
